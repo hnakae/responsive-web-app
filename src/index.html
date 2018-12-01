@@ -5,7 +5,7 @@
   <title>ResponsiveWebApp</title>
   <base href="/">
 
-  <link rel="stylesheet" href="styles.scss">
+  <!-- <link rel="stylesheet" href="styles.scss"> -->
   <!-- <link rel="stylesheet" href="/assets/main.scss"> -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Megrim|Roboto" rel="stylesheet">
@@ -16,8 +16,20 @@
 </head>
 <body>
   <app-root></app-root>
-  <script>
-    
-  </script>
+  <script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+
+<script>
+  $(document).ready(function(){
+    $('.add-circle').on('click', function(){
+      $('.task-form').addClass('active')
+    });
+    $('.task-form .close-btn').on('click', function(){
+      $('.task-form').removeClass('active')
+    });
+  });
+</script>
 </body>
 </html>
