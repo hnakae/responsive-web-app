@@ -1,28 +1,82 @@
-@import url(
-    'https://fonts.googleapis.com/css?family=Roboto:100,300,400,700'
-);
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
 @import "/assets/reset";
 @import "/assets/colors";
-
-*,h1,h2,h3,h4,h5,h6,p,span,div{
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
     background: $almostWhite;
     height: 100%;
     overflow: hidden;
 }
 
-.btn{
+.btn {
     width: 100%;
     padding: 10px 20px;
     text-align: center;
     margin: 15px 0;
-    &.lightBlue{
+    &.lightBlue {
         font-size: 25px;
         background: $lightBlue;
     }
 }
+
+// // laptops
+// @media screen and (min-width: 1200px) and (max-width: 1700px) {
+//     // #all-tasks {
+//     //     background-color: lightskyblue;
+//     // }
+// }
+
+// // tablets
+// @media screen and (max-width: 1199px) {
+//     // #all-tasks {
+//     //     background-color: thistle;
+//     // }
+// }
+
+// phones ... moved to app.component.scss!
+// @media screen and (max-width: 767px) {
+//     #all-tasks {
+//         .header {
+//             .top {
+//                 .tasks-total {
+//                     top: 0;
+//                     .task {
+//                         .number {
+//                             color: lightgreen; 
+//                             //font-weight: 100;
+//                             font-size: 24px; 
+//                             //margin: 0 10px 0 0;
+//                             //position: relative;
+//                             top: 3px;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+//#all-tasks[_ngcontent-c1] .header[_ngcontent-c1] .top[_ngcontent-c1] .tasks-total[_ngcontent-c1] .task[_ngcontent-c1] .number[_ngcontent-c1] // @media screen and (max-width: 767px) {
+//     #all-tasks .header .top  .tasks-total .task .number {
+//         color: lightgreen;
+//         font-weight: 100;
+//         font-size: 24px;
+//         margin: 0 10px 0 0;
+//         position: relative;
+//         top: 3px;
+//     }
+// }
